@@ -1,0 +1,8 @@
+下载 Plus 和相关依赖
+composer create-project zhiyicx/thinksns-plus
+克隆完成后我们进入 thinksns-plus 目录：
+
+发布拓展包资源
+php artisan vendor:publish --all
+
+https://slimkit.github.io/docs/server-getting-started-installation.html

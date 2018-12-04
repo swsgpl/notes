@@ -1,0 +1,24 @@
+安装
+安装 Plus 是一件非常简单的事情，但是你要先做到以下几点必须：
+
+PHP 版本必须大于 7.1.3
+你已下载并安装过 Composer
+你拥有一个 MySQL 或者 PostgreSQL 等数据库
+下载程序：
+
+composer create-project slimkit/plus
+基本配置：
+
+下载完成后进入程序的 storage/configure/ 目录，你会看到一个 plus.yml.example 文件，复制一份命名为 plus.yml 然后打开这份 Yaml 配置文件，进行你数据库等信息的配置。
+
+生成数据表以及默认填充数据：
+
+php artisan migrate --seed
+软链公开磁盘并发布静态资产：
+
+php artisan storage:link
+php artisan vendor:publish --all
+运行 Plus 程序：
+
+php artisan serve
+现在你可以访问 http://127.0.0.1:8000 查看你安装的 Plus 程序了，但是上述只是一份简单的安装，更加详细或者可以运行在 正式环境的安装指南请参阅
